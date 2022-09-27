@@ -71,17 +71,14 @@
   After removing the insulation for both the main cable and the individual wires, the crimping pins can be attached to the three wires using a crimping tool. Here, you should have a few trial runs before you actually start using the crimp connectors on the DS18b20 wires. Again, here is a helpful link that can get you started:
   https://core-electronics.com.au/guides/prototyping/how-to-crimp-custom-connectors/<br>
   
-  If you are satisfied with your crimping connections, go ahead and push the female connectors into the housing. Here, make sure that you keep the wires in the right order (attached photo) and that the crimped connectors are pushed deep enough into the housing until they properly click in. But be careful, as soon the connectors are locked it can be hard to get them out again without breaking the plastic housing. If you like it neat and tidy, you can also use some heat shrink tube to protect the exposed wires. Make sure that you push the raw, non-shrinked tube over the cable before you conclude this step by attaching the housing.
+  If you are satisfied with your crimping connections, go ahead and push the female connectors into the housing. Here, make sure that you keep the wires in the right order (attached photo) and that the crimped connectors are pushed deep enough into the housing until they properly click in. But be careful, as soon the connectors are locked it can be hard to get them out again without breaking the plastic housing. If you like it neat and tidy, you can also use some heat shrink tube to protect the exposed wires. Make sure that you push the raw, non-shrinked tube over the cable before you conclude this step by attaching the housing. Then you can use a hairdryer 
   
   #### 2.2 revC
   Now it's time to prepare the the revC. Here, we are using only four of the five through holes: GND, TMP, RV, VCC (?). The first step here is cut four wires (AWG22) to a length of approximately ... mm. Colour coding makes sense here, so if you have wire of different colours go ahead and use them. In the example, we used black/GND, red/VCC, yellow/XXX and green/XXX. Then, you can strip both ends of the wires. Again, on one end of each wire, a female crimp connector is attached. Before these connectors are pushed into the housing, you need to tin the other end of the wires. Tinning is described under the same link we used earlier:
   https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire<br>
-  After you've completed these steps, make sure that all wires have approximately the same length. This is important for the next step. Here we solder the prepared wires to the actual revC module. In the final climateBOX unit, the revC is positioned upright in a special socket. This is why you shouldn't follow the usual process of using the through holes for the soldering connection. If we do that, the wires will be attached in a 90° angle. The socket doesn't provide enough space for that and there would be too much strain on the wire-sensor connection. Here, we will use an alternative method that allows use to solder the wires "in-parallel", which is more space-effective in this scenario. To do that, we start by applying a big drop of solder to the connections we need. The solder needs to fully cover each through hole that we need, you can be generous here.
-  
-  - put solder on revC pin-holes
-  - slip over heat shrink
-  - reheat solder and lightly press down tinned wire ends
-  - Use heat shrink to protect soldered connections
+  After you've completed these steps, make sure that all wires have approximately the same length. This is important for the next step. Also, you can slip over some heat shrink over each wire. Like previously, we will use that later to protect the soldered connections. 
+	
+Now we solder the prepared wires to the actual revC module. In the final climateBOX unit, the revC is positioned upright in a special socket. This is why you shouldn't follow the usual process of using the through holes for the soldering connection. If we do that, the wires will be attached in a 90° angle. The socket doesn't provide enough space for that and there would be too much strain on the wire-sensor connection. Here, we will use an alternative method that allows use to solder the wires "in-parallel", which is more space-effective in this scenario. To do that, we start by applying a big drop of solder to the connections we need. The solder needs to fully cover each through hole that we need, you can be generous here. Then, wire for wire, you reheat the "solder-drop" and gently push the tinned wire-ends into the melted solder and let it cool down to fix the connection. In the end, you only need to shrink the protecting tubes. Voila, we've got ourselves a good and reliable connection. 
   
   #### 2.3 RTC
   - potentially remove any pre-installed pins
@@ -100,7 +97,10 @@
   - slip over heat shrink
   
   ## 3. Preparing the housing
-  - test-assemble parts
+  All housing parts can be 3D printed by using the .stl files here in the repository. When printed, you should go ahead and check every part for potential printing errors and afterwards test-assemble everything. The explosion graphic below shows you how to do that.
+
+
+
   - drill holes through top and bottom elements at pre-cut positions
   - pre-drill holes in housing main element
   - if in step XX the PCB frame and bottom element did not click together properly, pontentially use glue to fix connection
