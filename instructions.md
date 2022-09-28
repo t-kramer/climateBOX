@@ -68,7 +68,7 @@
   Now, after you have shortened the wires, it is time to attached the female connectors. But before you can proceed you need to get rid of some insulation to expose the wires, a process called stripping. If you have never stripped a wire before, this might be of help:
   https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire<br>
   <br>
-  After removing the insulation for both the main cable and the individual wires, the crimping pins can be attached to the three wires using a crimping tool. Here, you should have a few trial runs before you actually start using the crimp connectors on the DS18b20 wires. Again, here is a helpful link that can get you started:
+  After removing the insulation for both the main cable and the individual wires, the crimping pins can be attached to the three wires using a crimping tool. Here, you should have a few trial runs before you actually start using the crimp connectors on the DS18b20 wires. Again, here is a helpful link that can get you started:<br>
   https://core-electronics.com.au/guides/prototyping/how-to-crimp-custom-connectors/<br>
   <br>
   If you are satisfied with your crimping connections, go ahead and push the female connectors into the housing. Here, make sure that you keep the wires in the right order (attached photo) and that the crimped connectors are pushed deep enough into the housing until they properly click in. But be careful, as soon the connectors are locked it can be hard to get them out again without breaking the plastic housing. If you like it neat and tidy, you can also use some heat shrink tube to protect the exposed wires. Make sure that you push the raw, non-shrinked tube over the cable before you conclude this step by attaching the housing. Then you can use a hairdryer 
@@ -79,34 +79,28 @@
   <br>
   After you've completed these steps, make sure that all wires have approximately the same length. This is important for the next step. Also, you can slip over some heat shrink over each wire. Like previously, we will use that later to protect the soldered connections. 
 	
-Now we solder the prepared wires to the actual revC module. In the final climateBOX unit, the revC is positioned upright in a special socket. This is why you shouldn't follow the usual process of using the through holes for the soldering connection. If we do that, the wires will be attached in a 90° angle. The socket doesn't provide enough space for that and there would be too much strain on the wire-sensor connection. Here, we will use an alternative method that allows use to solder the wires "in-parallel", which is more space-effective in this scenario. To do that, we start by applying a big drop of solder to the connections we need. The solder needs to fully cover each through hole that we need, you can be generous here. Then, wire for wire, you reheat the "solder-drop" and gently push the tinned wire-ends into the melted solder and let it cool down to fix the connection. In the end, you only need to shrink the protecting tubes. Voila, we've got ourselves a good and reliable connection. 
+Now we solder the prepared wires to the actual revC module. In the final climateBOX unit, the revC is positioned upright in a special socket. This is why you shouldn't follow the usual process of using the through holes for the soldering connection. If we do that, the wires will be attached in a 90° angle. The socket doesn't provide enough space for that and there would be too much strain on the wire-sensor connection. Here, we will use an alternative method that allows use to solder the wires "in-parallel", which is more space-effective in this scenario. To do that, we start by applying a big drop of solder to the through holes we need to "fill" them. The solder needs to fully cover each through hole we use, you can be generous here. Then, wire for wire, you reheat the "solder-drop" and gently push the tinned wire-ends into the melted solder and let it cool down to fix the connection. In the end, you only need to shrink the protecting tubes. Voila, we've got ourselves a good and reliable connection. 
   
   #### 2.3 RTC
-  - potentially remove any pre-installed pins
-  - cut wires (length = )
-  - tin one end of wires
-  - at other end attach crimp connection (pins, housing)
-  - slip over heat shrink
-  - lead tinned wire ends through RTC module pin holes and solder
-  - Use heat shrink to protect soldered connections
+ The first you need to do when it comes to the RTC module is to remove any previously installed header pins. The clean removal of pre-installed can be an art itself and you need to very careful here not to damage the rest of the module. This might be a good resource if you haven't done something like that before:<br>
+ 
+ 
+Then, similar to the revC sensor, you have to go through the process of cutting wires (AWG-22, length: ~ xx mm), tinning (one end of each wire) and crimping (other end of the wire). If you don't enjoy crimping, for this module in particular you could also go for a fixed solution where the RTC module is directly soldered to the PCB instead of using the detachable female connector. Just beware that a potential removal or exchange of this module later might be a bit of a tedious procedure. After that, you can go ahead and solder the tinned ends of the wires to the RTC module. Also, if you decided to go for the crimped female connector, you still need to attach the male pin headers to the PCB. We left out this step in the beginning. Again, before you push over the housing for the crimped connectors or start soldering the RTC module to the PCB board, you might slip over some heat shrink for each wire than can protect the connections later on.
 
   #### 2.4 SD Module
-  - potentially remove any pre-installed pins
-  - cut wires (length = )
-  - tin both ends of wires
-  - lead tinned wire ends through SD module pin holes and solder
-  - slip over heat shrink
+  For the SD module the procedure is a bit different. Here we recommended a direct, non-detachable connection between SD module and PCB. Housing and PCB are designed in a way that the SD module is positioned directly under the PCB. This means we can use straight wires that don't need to be very flexible, so instead of stranded wire, you could also use solid core wire here. Before you cut the wires to a length of ~ YY mm and tin both ends, make sure that you remove any pre-installed pins from the SD module.
+  
+  Then the process is a bit different. We recommend the following approach: Start and solder one end of the wires to the cleaned SD module. Then slip over some heat shrink and lead the SD module wires through the designated through holes of the PCB as if you were preparing to solder. After that, still keeping both components together, try to cautiosly put down the PCB and SD module in the prepared housing elements. Make sure that everything is in it's correct place, especially the SD module should nicely fit into the designated indentation.
+  
+  Now, for each through hole there should be some remaining wire seeable on the top side of the PCB. If this is the case, and everything is still in position, you can go ahead and solder. Afterwards, you should have some connecting wires of exactly the length you need. The last step is to use scissors or a sidecutter to get rid of protruding wire on the top of PCB and apply the heat shrink below to protect the connection.
   
   ## 3. Preparing the housing
   All housing parts can be 3D printed by using the .stl files here in the repository. When printed, you should go ahead and check every part for potential printing errors and afterwards test-assemble everything. The explosion graphic below shows you how to do that.
-  
+<br>
   **Explosion Graphic**
 <img src='https://user-images.githubusercontent.com/49641232/192633547-98402b64-37cd-466a-a59b-177db0aa44fd.png' width="600" height="900">
-
-  - drill holes through top and bottom elements at pre-cut positions
-  - pre-drill holes in housing main element
-  - if in step XX the PCB frame and bottom element did not click together properly, pontentially use glue to fix connection
-  - use screwdriver to tighten screws through pre-drilled holes
+<br>
+In both, bottom and top cover, there are notches. Later on, these notches accomodate some screws that hold together the whole unit. We recommend to pre-drill the holes here. This will simplify the screwing process later.
   
   
 --------------------------------------------------  
