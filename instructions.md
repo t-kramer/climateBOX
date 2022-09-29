@@ -105,28 +105,34 @@ In both, bottom and top cover, there are notches. Later on, these notches accomo
   
 --------------------------------------------------  
   ## 4. Assembly
-  #### 4.1 Core assembly
-  #### 4.1.1 DS18b20
-  - attached prepared DS18b20 sensor to PCB via crimp connectors
+  Now that you've prepared all parts and finished most of the work, it's time to put everything together. But before you proceed with the final assembly and put everything into the housing, it makes sense to test the climateBOX core and it's connections (soldered/crimped). So, go ahead and connect all components to their designated pins on the PCB.
   
-  #### 4.1.2 revC
-  - attached prepared revC sensor to PCB via crimp connectors
-  
-  #### 4.1.3 RTC
-  - lead tinned wire ends through pin hole and solder
-  - Use heat shrink to protect soldered connection
-  
-  #### 4.1.4 SD Module
-  - lead other end of SD module wires through PCB pin holes and solder
-  - Use heat shrink to protect soldered connection
-  - makes sure SD card is inserted
-
-  #### 4.1.5 DHT22
-  - attach DHT22 to PCB using pre-installed feather headers
+  [PICTURE]
+ 
+ #### 4.1 Core assembly
+  * attach DHT-22 to PCB
+  * attach DS18b20 sensor to PCB
+  * attach revC sensor to PCB
+  * attach RTC module to PCB
+  * make sure SD card is inserted
   
   
   #### 4.2 Connection test
-  #### 4.2.1 Prepare Arduino IDE
+  
+  #### 4.2.1 The Arduino IDE
+  Before you go ahead with the final assembly, it makes sense to test your connections and make sure that everything works as expected. To do that, we need to upload a program to the ESP32 board. This can be done using the Arduino IDE, a software that allows to write and send code to the microcontroller via USB. If haven't heard about Arduino, the web has a lot of fantastic resources to dig a little deeper. The Arduino IDE is briefly described here:<br>
+   https://core-electronics.com.au/guides/arduino-ide-tutorial/<br>
+   
+   
+   #### 4.2.2 Adding the ESP32 board
+   The software was originally written for Arduino boards, but it does also work with the ESP32. The only thing we need to do is to manually add the ESP32 board to the board library. The following source shows you how to do that:<br>
+   https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/<br>
+  
+
+  
+ #### 4.2.3 Required libraries
+  
+  https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
   Quick Ardunio IDE overview here: LINK<br>
   - Install ESP32 via board manager
   - Install pre-required libraries 
