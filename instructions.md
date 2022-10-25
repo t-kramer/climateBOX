@@ -16,6 +16,9 @@
   1x standard micro-USB cable<br>
   1x standard 5V wall charging adapter**<br>
   
+![img0](https://user-images.githubusercontent.com/49641232/197687118-3cef56c6-803c-42b8-9e1c-8e7bd952123f.png)
+<br>
+  
 ### b. Consumables
   - Solder
     e.g. 
@@ -30,7 +33,10 @@
   - Heat shrink tubes
     e.g. 
   - Solder wick / Solder vaccuum
-    e.g. 
+    e.g. <br>
+    
+![img1](https://user-images.githubusercontent.com/49641232/197735830-797ab102-67d4-4b23-971d-f8e800ba0475.png)
+
   
 ### c. Housing
   1x Main element (side walls)<br>
@@ -41,6 +47,8 @@
   1x revC cover<br>
   1x Ping-pong ball, matt-black<br>
   1x Display dummy+<br>
+  
+  -- Rhino IMAGE -- <br>
   
 ### d. Equipment
   - Soldering Iron<br>
@@ -54,27 +62,51 @@
   ----------------------------------
   # Step-by-Step Instructions
   ## 1. Preparing the PCB
-  #### 1.1 Attaching the resistors to PCB
-  The first step is to attached the six resistors (4x10Ohm,2x15Ohm) to the PCB. For each resistor, lead both ends through the dedicated Through Holes (TH) on the top side of the board. Then, turn the board around and fix the resistors by soldering it to the board.
-  #### 1.2 Attaching female feather headers to PCB
-  As a next step you should attach the female feather headers for ESP32 and DHT-22 to the PCB. Alternatively, you could also directly solder ESP32 and DHT-22 to the PCB, using headers however simplifies the disassembly in case of component errors or other problems.
-  #### 1.3 Attaching male headers to PCB
-  Similar to the previous step, for revC and DS18b20 for opted for the flexible solution of not directly soldering these sensors or their wire ends to the PCB, but to use headers instead. In this case we used the combination of male headers on the PCB side and crimped female connecters on the sensor side. More about that in Section 2.
+  
+  #### 1.1 PCB Overview
+  
+  <br> -- IMAGE -- <br>
+  
+  #### 1.2 Attaching the resistors to PCB
+  The first step is to attached the six resistors (4x10k Ohm,2x15k Ohm) to the PCB. For each resistor, thread both ends through the dedicated Through Holes  on the top side of the board. Then, turn the board around and fix the resistors by soldering it to the board.<br>
+  
+ <br> -- IMAGE -- <br>
+  
+  #### 1.3 Attaching female feather headers to PCB
+  As a next step you can attach the female feather headers for ESP32 and DHT-22 to the PCB. Alternatively, you could also directly solder ESP32 and DHT-22 to the PCB. However, using headers will simplify the disassembly in case of component errors or other problems.
+  
+  <br> -- IMAGE -- <br>
+  
+  #### 1.4 Attaching male headers to PCB
+  Similar to the previous step, for revC and DS18b20 we opted for the flexible solution of not directly soldering these sensors or their wire ends to the PCB, but to use headers instead. In this case we used the combination of male headers on the PCB side and crimped female connecters on the sensor side. More about that in Section 2.
+  
+  <br> -- IMAGE -- <br>
   
   ## 2. Preparing components
   #### 2.1 DS18b20
   The DS18b20 usually comes with a relatively long cable containing three wires for power (red), ground (black) and data (white). We recommend shortening the cables/wires to around 150mm. But be careful here not to remove too much cable. The sensor/globe thermometer of the climateBOX sits on top of a small pole. The length of the pole needs to be included in the cable length, otherwise the cable won't be long enough and you can't connect it to the PCB.<br>
+  
+   <br> -- IMAGE -- <br>
+  
   <br>
   Now, after you have shortened the wires, it is time to attached the female connectors. But before you can proceed you need to get rid of some insulation to expose the wires, a process called stripping. If you have never stripped a wire before, this might be of help:
   https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire<br>
+  
+   <br> -- IMAGE -- <br>
+  
   <br>
   After removing the insulation for both the main cable and the individual wires, the crimping pins can be attached to the three wires using a crimping tool. Here, you should have a few trial runs before you actually start using the crimp connectors on the DS18b20 wires. Again, here is a helpful link that can get you started:<br>
   https://core-electronics.com.au/guides/prototyping/how-to-crimp-custom-connectors/<br>
+  
+   <br> -- IMAGE -- <br>
+  
   <br>
-  If you are satisfied with your crimping connections, go ahead and push the female connectors into the housing. Here, make sure that you keep the wires in the right order (attached photo) and that the crimped connectors are pushed deep enough into the housing until they properly click in. But be careful, as soon the connectors are locked it can be hard to get them out again without breaking the plastic housing. If you like it neat and tidy, you can also use some heat shrink tube to protect the exposed wires. Make sure that you push the raw, non-shrinked tube over the cable before you conclude this step by attaching the housing. Then you can use a hairdryer 
+  If you are satisfied with your crimping connections, go ahead and push the female connectors into the housing. Here, make sure that you keep the wires in the right order (attached photo) and that the crimped connectors are pushed deep enough into the housing until they properly click in. But be careful, as soon the connectors are locked it can be hard to get them out again without breaking the plastic housing. If you like it neat and tidy, you can also use some heat shrink tube to protect the exposed wires. Make sure that you push the raw, non-shrinked tube over the cable before you conclude this step by attaching the housing. Then you can use a hairdryer to apply the heat shrink.
+  
+   <br> -- IMAGE -- <br>
   
   #### 2.2 revC
-  Now it's time to prepare the the revC. Here, we are using only four of the five through holes: GND, TMP, RV, VCC (?). The first step here is cut four wires (AWG22) to a length of approximately ... mm. Colour coding makes sense here, so if you have wire of different colours go ahead and use them. In the example, we used black/GND, red/VCC, yellow/XXX and green/XXX. Then, you can strip both ends of the wires. Again, on one end of each wire, a female crimp connector is attached. Before these connectors are pushed into the housing, you need to tin the other end of the wires. Tinning is described under the same link we used earlier:<br>
+  Now it's time to prepare the revC. Here, we are using only four of the five through holes: GND, TMP, RV, VCC (?). The first step here is cut four wires (AWG22) to a length of approximately ... mm. Colour coding makes sense here, so if you have wire of different colours go ahead and use them. In the example, we used black/GND, red/VCC, yellow/XXX and green/XXX. Then, you can strip both ends of the wires. Again, on one end of each wire, a female crimp connector is attached. Before these connectors are pushed into the housing, you need to tin the other end of the wires. Tinning is described under the same link we used earlier:<br>
   https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire<br>
   <br>
   After you've completed these steps, make sure that all wires have approximately the same length. This is important for the next step. Also, you can slip over some heat shrink over each wire. Like previously, we will use that later to protect the soldered connections. 
