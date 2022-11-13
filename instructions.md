@@ -15,8 +15,9 @@
   1x SD card/microSD card with adapter
   1x standard micro-USB cable<br>
   1x standard 5V wall charging adapter**<br>
-  
-![img0](https://user-images.githubusercontent.com/49641232/197687118-3cef56c6-803c-42b8-9e1c-8e7bd952123f.png)
+
+<img src='https://user-images.githubusercontent.com/49641232/197687118-3cef56c6-803c-42b8-9e1c-8e7bd952123f.png' width="75%" height="75%">
+
 <br>
   
 ### b. Consumables
@@ -35,8 +36,7 @@
   - Solder wick / Solder vaccuum
     e.g. <br>
     
-![img1](https://user-images.githubusercontent.com/49641232/197735830-797ab102-67d4-4b23-971d-f8e800ba0475.png)
-
+<img src='https://user-images.githubusercontent.com/49641232/197735830-797ab102-67d4-4b23-971d-f8e800ba0475.png' width="50%" height="50%">
   
 ### c. Housing
   1x Main element (side walls)<br>
@@ -48,7 +48,8 @@
   1x Ping-pong ball, matt-black<br>
   1x Display dummy+<br>
   
-  -- Rhino IMAGE -- <br>
+ <img src='https://user-images.githubusercontent.com/49641232/201505422-ea23731a-b37b-47e1-859a-60f756813b92.png' width="50%" height="50%">
+  <br>
   
 ### d. Equipment
   - Soldering Iron<br>
@@ -65,7 +66,8 @@
   
   #### 1.1 PCB Overview
   
-  <br> -- IMAGE -- <br>
+  <br> 
+  <img src='https://user-images.githubusercontent.com/49641232/201505610-48c200c8-a2f8-446b-83e9-dd7bb837be8a.png' width="50%" height="50%"><br>
   
   #### 1.2 Attaching the resistors to PCB
   The first step is to attached the six resistors (4x10k Ohm,2x15k Ohm) to the PCB. For each resistor, thread both ends through the dedicated Through Holes  on the top side of the board. Then, turn the board around and fix the resistors by soldering it to the board.<br>
