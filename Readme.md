@@ -14,7 +14,7 @@ Things you can find here include:
 <br>
 Also, make sure that you head to our discussions page.
 
-LINK
+https://github.com/t-kramer/climateBOX/discussions
 
 This is where we post about any updates, ask for your feedback and host our Q&A page.
 
