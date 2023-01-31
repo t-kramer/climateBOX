@@ -14,26 +14,27 @@
   e) DS1302                   RTC module
 
 
-More information about the climateBOX and it's calibration can be found here:
+More information about the climateBOX can be found here:
 
 - Publication:
-
+Kramer, T., Garcia-Hansen, V., & Omrani, S. (2023). 
+climateBOX: a low-cost and open-source monitoring device for personal thermal comfort evaluation. 
+Energy and Buildings, 112830.
 
 - GitHub page:
+https://github.com/t-kramer/climateBOX
 
 
+The code is provided by:
+
+School of Architecture & Built Environment,
+Queensland University of Technology
+
+Contact:
+t.kramer@qut.edu.au
 
 
- The code was written by:
-  
- Tobias Kramer
- School of Architecture & Built Environment,
- Queensland University of Technology
-
- t.kramer@qut.edu.au
-
- 
- License:                       */
+License:                       */
 
 //______________________________________LIBRARIES______________________________________//
 
