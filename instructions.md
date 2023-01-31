@@ -417,48 +417,73 @@ b)
 c)
 <br>
 
-  #### 4.2.2 Test Connection
+  #### 4.2.4 Test Connection
 Now, that all libraries are installed, the last thing we need to do upload the climateBOX program. Again, here the program you have to use depends on the climateBOX version you want to build. The programs can be found in the *code* folder in this repository.<br>
+
 <br>
+
 If you haven’t uploaded a program to a microcontroller via the Arduino IDE yet, this link might be of help:<br>
 https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE<br>
+
 <br>
+
 But before you upload the code to test your core assembly, it might be worth an excursion to the next section where I explain the program codes and their differences.<br>
+
 <br>
+
 When you have gone through the information in the next section, use the electrical circuit diagram to check all your connections once again and make sure you have connected all components in the right way.<br>
+
 <br>
+
 If you are confident that everything is in its correct spot, you can go ahead and connect your assembled PCB core to the computer via USB.<br>
+
 <br>
+
 Following the instructions in the provided link, make sure that you have selected the right board (DOIT ESP32 DEVKIT V1) and correct port.<br>
+
 <br>
+
 If everything is connected properly, the core device should work as expected and described in the program code section. You can now continue with the final assembly.<br>
+
 <br>
+
 Otherwise, if you are having problems, first check the following, common issues:<br>
 Properly check all the connections for:<br>
+
 <br>
+
 -	Badly soldered connections
 -	Loose connections, e.g. crimp connectors not properly attached to pins
 -	Component attached in a wrong way
 -	Wires attached in wrong order
 -	SD not inserted
 -	RTC is missing battery
+
 <br>
 <br>
+
 If neither of those things fixes your problem, feel free to navigate to the discussion page and ask. 
 
-
+<br>
+<br>
 
   #### 4.3 Final assembly
   - detach DS18b20 & revC
   - lead wires of both sensors through pre-cut holes in top element
-  - click PCB with SD and RTC module into PCB frame element
-  - click PCB frame element into pre-cut holes in bottom element (maybe use glue to fix connections)
-  - click in DHT22 sensor into PCB designated feather headers
+  - click PCB with SD and RTC module into PCB podest
+  - click PCB frame element into pre-cut holes in bottom element (maybe use super glue to fix connections)
+  - click in DHT22 sensor into PCB designated feather headers (if not soldered)
   - slip over main wall element
   - lift top element including revC and DS18b20 sensors
   - connect sensors to PCB
   - while pushing wires into the interior of the box, push down the top element and attach by tightening screws
   - attach USB wires
+
+<br>
+
+<img width="600" alt="assembly@2x" src="https://user-images.githubusercontent.com/49641232/215748668-0585b33b-bd92-4925-8064-5facf76d8f2b.png">
+
+
 
 
 --------------------------------------------------
