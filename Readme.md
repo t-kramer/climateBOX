@@ -9,7 +9,7 @@ Things you can find here include:
 - calibration app & data for revC velocity sensor
 <br>
 
-**NOTE: We are still working on the content and will update the page on daily basis. So, stay tuned!💡** 
+**NOTE: We are still working on the content and will update the page on a daily basis. So, stay tuned!💡** 
 
 <br>
 Also, make sure that you head to our discussions page.
