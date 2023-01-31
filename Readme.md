@@ -2,8 +2,16 @@
 
 # Welcome to the climateBOX GitHub page!
 
-Source for instructions and calibration data.
+Things you can find here include:
 
-There's also a small app that helps you with the revC calibration.
+- full documentation, incl. source files for program code, PCB & housing elements
+- building instructions, incl. videos
+- calibration app & data for revC velocity sensor
+
+Also, make sure that you head to discussions page.
+
+LINK
+
+This is where we post about any updates, ask for your feedback and host our Q&A page.
 
 Have fun!
