@@ -1,7 +1,9 @@
 # Welcome to the climateBOX GitHub page!
 
-The climateBOX is a low-cost unit for personal thermal comfort monitoring.
-
+The climateBOX is a low-cost unit for personal thermal comfort monitoring.<br>
+<br>
+With this project we specifically aim to support novices in the field of microelectronics and help you to use the potential of low-cost sensors.<br>
+<br>
 Things you can find here include:
 
 - full documentation, incl. source files for program code, PCB & housing elements
@@ -9,14 +11,16 @@ Things you can find here include:
 - calibration app & data for revC velocity sensor
 <br>
 
-**NOTE: We are still working on the content and will update the page on a daily basis. So, stay tuned!💡** 
-
-<br>
 Also, make sure that you head to our discussions page.
 
 https://github.com/t-kramer/climateBOX/discussions
 
-This is where we post about any updates, ask for your feedback and host our Q&A page.
+This is where we post about any updates, ask for your feedback and host our Q&A page.<br>
+<br>
+
+**NOTE: We are still building content and will update the page on a daily basis. So, stay tuned!💡** 
+
+<br>
 
 Have fun!
 <br>
