@@ -7,7 +7,11 @@ Things you can find here include:
 - full documentation, incl. source files for program code, PCB & housing elements
 - building instructions, incl. videos
 - calibration app & data for revC velocity sensor
+<br>
 
+**NOTE: We are still working on the content and will update the page on daily basis. So, stay tuned!💡** 
+
+<br>
 Also, make sure that you head to our discussions page.
 
 LINK
@@ -19,9 +23,9 @@ Have fun!
 <br>
 <br>
 
-More information can be found in the recent scientific publication covering the device development and calibration.
+For more information, feel free to read our recent scientific publication covering the unit's development and calibration.
 
-Kramer, T., Garcia-Hansen, V., & Omrani, S. (2023). climateBOX: a low-cost and open-source monitoring device for personal thermal comfort evaluation. Energy and Buildings, 112830. https://doi.org/https://doi.org/10.1016/j.enbuild.2023.112830 
+*Kramer, T., Garcia-Hansen, V., & Omrani, S. (2023). climateBOX: a low-cost and open-source monitoring device for personal thermal comfort evaluation. Energy and Buildings, 112830.* https://doi.org/https://doi.org/10.1016/j.enbuild.2023.112830 
 
 <img src='https://user-images.githubusercontent.com/49641232/215706208-dad1da8d-f41a-44b8-ad71-35b8d9cb217d.png'  height="500">
 
