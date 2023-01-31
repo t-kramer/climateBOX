@@ -57,7 +57,6 @@
 <br>
   
 ### e. Pre-requisites
-<br>
 **a) Order components**
 
 You will not be able to build the climateBOX without the necessary components. Please stick to component list above and order them online. I can personally recommend two stores:
@@ -71,9 +70,7 @@ If you have questions about the components and have problems getting hands on th
 
 **b) Order the PCB(s)**
 
-Before you can start building and using the climateBOX, you need to order the PCBs, or printed circuit boards. You find all require files in the following folder: 
-
-*/pcb* REPLACE by link
+Before you can start building and using the climateBOX, you need to order the PCBs, or printed circuit boards. You find all require files in the *pcb* folder
 
 I recommend pages like https://jlcpcb.com. There are many alternatives and usually they follow the same process. You just upload the PCB files, also called “Gerber” files. This will provide the manufacturer with all essential information. You can then specify the quantity of PCBs you want to order and can make some custom configurations like changing the colour of the board etc. The price per board should be less than 2 USD.<br>
 Please check the following configurations before you order:
@@ -132,7 +129,9 @@ https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Ar
   # Step-by-Step Instructions
 Now, that you hopefully have taken care of all the pre-requisites above, let’s get to the core: the actual assembly.<br>
 The instructions are separated into three sections. For the first two sections, there is a helpful **video** that visualises the steps.<br> Please be aware that videos are not updated regularly and should be seen as supplementary material. **Always refer to written instructions here as the main source for documentation.**<br>
+<br>
 The links to the videos can be found here:<br>
+<br>
 *DIR* UPDATE LINK
 <br>
 <br>
@@ -148,11 +147,12 @@ Below you can see the circuit diagram, your main resource for building the clima
 The ESP32 as the microcontroller is the heart of the device. Three sensors (DHT-22, DS18B20, revC) and two additional components (SD module, OLED display/RTC module) are connected to the ESP32. Both the DHT-22 and DS18B20 require a pull-up resistor (R5, R6). As you can see, the diagram for the revC looks a bit more complicated. Here we need to do some level shifting. The revC requires around 5V to operate and provides an output signal in the same range. The ESP32 however runs on 3.3V. So to be able to use the revC output, we need to bring it down to the ESP32 operating range.
 <br>
 Download here:<br>
+<br>
 [schematic-v1.1.pdf](https://github.com/t-kramer/climateBOX/files/10541439/schematic-v1.1.pdf)
 
   
   
-## 1. PART I: Preparing the PCB
+## PART I: Preparing the PCB
   
 #### PCB Overview
   
@@ -163,7 +163,9 @@ The printed circuit board (PCB) is the heart of the climateBOX. All components w
 <br>
 The following instructions will roughly follow the order shown in the video. It is best to follow both the written instructions and the video, especially when you are new to microelectronics.<br>
 <br>
+
 **NOTE: This part is covered in video ‘climateBOX - PART I’**
+
 <br>
 The link to the video can be found here:
 <br>
@@ -199,7 +201,7 @@ That’s all you have to do to prepare the PCB. Next, let’s take care of the i
 <br>
 <br>
   
-## 2. PART II: Preparing components
+## PART II: Preparing components
 The following components are covered in this section:
 -	globe temperature sensor (DS18B20)
 -	air velocity sensor (revC)
@@ -207,8 +209,9 @@ The following components are covered in this section:
 <br>
 Depending on the version you want to build, you have to add one additional component to this list. If you are going for v0.0, you have to prepare the RTC module. Otherwise, if you are going for v1.0, prepare the display module. Since the preparation of both modules pretty much follows the same steps covered earlier in this section, we do not cover them in the video. But you should have enough practice from previous steps to prepare these components without visual instructions.<br>
 <br>
+
 **NOTE: This part is covered in video ‘climateBOX - PART II’**
-<br>
+
 The link to the video can be found here:
 <br>
 LINK
@@ -249,6 +252,7 @@ Then you can use a hairdryer to apply the heat shrink. Done!<br>
 <br> -- IMAGE -- <br>
 
 <br>
+
 #### 2.2 revC
 Now it's time to prepare the revC. Here, we are using only four of the five pins: GND, TMP, RV, +V.<br>
 <br>
@@ -337,7 +341,7 @@ Because we are going for a fixed solution here, where the RTC module is directly
 After tinning both wire ends, you can go ahead and solder one end of each wire to the RTC module, done! The rest will be covered in PART III.<br>
 <br>
 <br>
-## 3. PART III: Preparing the housing
+## PART III: Preparing the housing
 <br>
 All housing parts can be 3D printed by using the .stl files in the *housing* folder.<br>
 <br>
@@ -355,7 +359,7 @@ After you’ve done that, you can go ahead with the actual assembly.<br>
 <br>
 --------------------------------------------------
 <br>
-## 4. PART IV: Assembly
+## PART IV: Assembly
 Now that you've prepared all parts and finished most of the work, it's time to put everything together. <br>
 <br>
 But before you proceed with the final assembly and put everything into the housing, it makes sense to test the climateBOX core and its connections (soldered/crimped) before. So, I recommend dividing the assembly into two steps:
@@ -458,7 +462,7 @@ If neither of those things fixes your problem, feel free to navigate to the disc
 
 
 --------------------------------------------------
-  ## 5. Part V: The Program Code
+  ## Part V: The Program Code
   - Explanation climateBOX code
   - Highlight differences
   - Make sure that: USB wire is attached properly, SD card is inserted
