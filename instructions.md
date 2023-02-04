@@ -3,7 +3,7 @@
 # List of components
 ### a. Electronics
   1x ESP32 DevKit<br>
-  1x PCB<br>
+  1x [PCB](./pcb)<br>
   1x DHT-22<br>
   1x DS18B20<br>
   1x revC [Modern Device](https://moderndevice.com/products/wind-sensor) <br>
@@ -42,6 +42,8 @@
   1x ping-pong ball, matt-black<br>
   1x display dummy* (only for v0.0)<br>
   
+  [Here to Housing parts!](./housing)
+  
  <img src='https://user-images.githubusercontent.com/49641232/215630392-d68c3e94-9fc1-4404-a4cd-8200f0625396.png' width="50%" height="50%">
   <br>
   
@@ -70,7 +72,7 @@ If you have questions about the components and have problems getting hands on th
 
 **b) Order the PCB(s)**
 
-Before you can start building and using the climateBOX, you need to order the PCBs, or printed circuit boards. You find all require files in the *pcb* folder
+Before you can start building and using the climateBOX, you need to order the PCBs, or printed circuit boards. You find all require files in the [PCB](./pcb) folder
 
 I recommend pages like https://jlcpcb.com. There are many alternatives and usually they follow the same process. You just upload the PCB files, also called “Gerber” files. This will provide the manufacturer with all essential information. You can then specify the quantity of PCBs you want to order and can make some custom configurations like changing the colour of the board etc. The price per board should be less than 2 USD.<br>
 Please check the following configurations before you order:
@@ -136,8 +138,8 @@ The links to the videos can be found here:<br>
 <br>
 <br>
 Before you start, again make sure you have done the following:
-- you’ve got the PCB
-- you have 3D-printed the housing parts
+- you’ve got the [PCB](./pcb)
+- you have 3D-printed the [housing parts](./housing)
 - you have all the components, consumables and equipment required (here we have given an asterisk * to non-essential items in the lists above)
 <br>
 Below you can see the circuit diagram, your main resource for building the climateBOX. Please be aware, that for v0.0 you can simply swap the OLED display for the RTC module. Both components uses the same interfaces.
@@ -263,9 +265,8 @@ The first step here is cut four wires (I recommend stranded wire, AWG22) to a le
 
 Stranded wire is best here because it will be exposed to some bending. Stranded wire is more flexible and is generally the best choice for most internal components.<br>
 <br>
-Read more about the difference between strand and solid core wire here:
+Read more about the difference between strand and solid core wire [here](https://learn.sparkfun.com/tutorials/working-with-wire/stranded-vs-solid-core-wire):
 <br>
-https://learn.sparkfun.com/tutorials/working-with-wire/stranded-vs-solid-core-wire
 <br>
 Also, colour coding makes sense here. If you have wire of different colours go ahead and use them. In the example, we used black/GND, red/V+, yellow/RV and green/TMP.<br>
 <br>
@@ -276,9 +277,7 @@ Then, you can strip both ends of the wires.<br>
 <br>
 On one end of each wire, a female crimp connector will be attached. Here, you can go through the same process we described earlier: stripping, crimping female connectors, pushing connectors into the housing.<br>
 <br>
-On the other end, we need to the tin the stranded wire. The process of tinning is described under the same link we used earlier:
-<br>
-https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire<br>
+On the other end, we need to the tin the stranded wire. The process of tinning is described under the same [link](https://learn.sparkfun.com/tutorials/working-with-wire/how-to-strip-a-wire) we used earlier.<br>
 <br>
 After you've completed these steps, make sure that all wires have approximately the same length. This is important for the next step. You can use a side cutter to adjust the length of the tinned wire ends.
 Also, you can go ahead slip over some heat shrink over each wire. Like previously, that will later protect the soldered connections.<br>
@@ -294,9 +293,8 @@ Next step SD module!
   #### 2.3 SD Module
 For the SD card module the procedure is a bit different. Here we recommended a direct, non-detachable connection between SD module and PCB. Housing and PCB are designed in a way that the SD module is positioned directly under the PCB. This means we can use solid core wire, which does not need to be very flexible and saves the effort of tinning.<br>
 <br>
-Before you cut the wires to a length of ~40 mm, make sure that you remove any pre-installed pins from the SD module. The clean removal of pre-installed pins can be an art itself and you need to very careful here not to damage the rest of the module. This might be a good resource if you haven't done something like that before:
+Before you cut the wires to a length of ~40 mm, make sure that you remove any pre-installed pins from the SD module. The clean removal of pre-installed pins can be an art itself and you need to very careful here not to damage the rest of the module. [This](https://www.instructables.com/How-to-Desolder-Headers/) might be a good resource if you haven't done something like that before.
 <br>
-https://www.instructables.com/How-to-Desolder-Headers/
 <br>
 Then the process is a bit different. It makes sense to watch the video first before you go ahead, just to get the strategy. I recommend the following approach:<br>
 <br>
@@ -343,7 +341,7 @@ After tinning both wire ends, you can go ahead and solder one end of each wire t
 <br>
 ## PART III: Preparing the housing
 <br>
-All housing parts can be 3D printed by using the .stl files in the *housing* folder.<br>
+All housing parts can be 3D printed by using the .stl files in the [housing](./housing) folder.<br>
 <br>
 <br>
 When printed, you should go ahead and check every part for potential printing errors and test-assemble everything. The explosion graphic below shows you how to do that. 
@@ -388,8 +386,8 @@ A quick summary of the steps and my recommended connection in brackets:
 #### 4.2 Connection test
   
 #### 4.2.1 The Arduino IDE
-Before you go ahead with the final assembly and put everything into the housing, it makes sense to test your core connections and make sure that everything works as expected. To do that, we need to upload the climateBOX program to the ESP32 board. This can be done using the Arduino IDE, a software that allows to write and send code to the microcontroller via USB. If haven't heard about Arduino, the web has a lot of fantastic resources to dig a little deeper. The Arduino IDE is briefly described here:<br>
-   https://core-electronics.com.au/guides/arduino-ide-tutorial/<br>
+Before you go ahead with the final assembly and put everything into the housing, it makes sense to test your core connections and make sure that everything works as expected. To do that, we need to upload the climateBOX program to the ESP32 board. This can be done using the Arduino IDE, a software that allows to write and send code to the microcontroller via USB. If haven't heard about Arduino, the web has a lot of fantastic resources to dig a little deeper. The Arduino IDE is briefly described [here](https://core-electronics.com.au/guides/arduino-ide-tutorial/).
+<br>
 <br>
 So, depending on your operating system you should head to the official Arduino website and download the IDE for Windows or Mac.<br>
 <br>
@@ -405,8 +403,7 @@ https://www.arduino.cc/en/software<br>
 
   
  #### 4.2.3 Required libraries
-To use the sensors, you also need to install some custom libraries first. Again, here is a link that will show you how to do that:<br>
-https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries<br>
+To use the sensors, you also need to install some custom libraries first. Again, here is a [link](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries) that will show you how to do that.<br>
 <br>
 If you are familiar with the process of installing additional libraries, please go ahead and install the following libs required to run the climateBOX<br>
 <br>
@@ -418,13 +415,12 @@ c)
 <br>
 
   #### 4.2.4 Test Connection
-Now, that all libraries are installed, the last thing we need to do upload the climateBOX program. Again, here the program you have to use depends on the climateBOX version you want to build. The programs can be found in the *code* folder in this repository.<br>
+Now, that all libraries are installed, the last thing we need to do upload the climateBOX program. Again, here the program you have to use depends on the climateBOX version you want to build. The programs can be found in the [code](./code) folder in this repository.<br>
 
 <br>
 
-If you haven’t uploaded a program to a microcontroller via the Arduino IDE yet, this link might be of help:<br>
-https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE<br>
-
+If you haven’t uploaded a program to a microcontroller via the Arduino IDE yet, this [link](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE) might be of help.
+<br>
 <br>
 
 But before you upload the code to test your core assembly, it might be worth an excursion to the next section where I explain the program codes and their differences.<br>
@@ -439,7 +435,7 @@ If you are confident that everything is in its correct spot, you can go ahead an
 
 <br>
 
-Following the instructions in the provided link, make sure that you have selected the right board (DOIT ESP32 DEVKIT V1) and correct port.<br>
+Following the instructions in the provided link, make sure that you have selected the right board (DOIT ESP32 DEVKIT V1) and the correct port.<br>
 
 <br>
 
