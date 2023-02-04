@@ -10,4 +10,4 @@ The most important thing for you will be the calibration app, which will assist 
 The app is based on another repository and can be found deployed as a Streamlit app here [HERE](https://t-kramer-revc-calibration-tool-main-mtgpng.streamlit.app)!
 <br>
 <br>
-On the linked page you will also find some more information about the process.
+On this page you will also find some more information about the process.
