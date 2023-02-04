@@ -6,7 +6,7 @@
   1x PCB<br>
   1x DHT-22<br>
   1x DS18B20<br>
-  1x revC (Modern Device)<br>
+  1x revC [Modern Device](https://moderndevice.com/products/wind-sensor) <br>
   1x SD module<br>
   1x RTC module*<br>
   1x OLED display*<br>
@@ -132,7 +132,7 @@ The instructions are separated into three sections. For the first two sections, 
 <br>
 The links to the videos can be found here:<br>
 <br>
-*DIR* UPDATE LINK
+[Video | Part I](https://vimeo.com/794707921)
 <br>
 <br>
 Before you start, again make sure you have done the following:
@@ -167,9 +167,9 @@ The following instructions will roughly follow the order shown in the video. It 
 **NOTE: This part is covered in video ‘climateBOX - PART I’**
 
 <br>
-The link to the video can be found here:
+Here's the link to the video again:
 <br>
-LINK
+[Video | Part I](https://vimeo.com/794707921)
 <br>
   
 #### 1.1 Attaching the resistors to PCB
