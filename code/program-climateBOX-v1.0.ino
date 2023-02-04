@@ -378,7 +378,7 @@ void recordNewData() {
 
   veloReading = C_A_velo*pow(rvRawScale, 3) + (C_B_velo * tmpRawScale) + C_C_velo;
 
-  veloReading = veloReading - zeroWindAdjustment; // adjust zero windspeed
+  veloReading = veloReading + zeroWindAdjustment; // adjust zero windspeed
 
   if (veloReading < 0.00) {
     veloReading = 0;
