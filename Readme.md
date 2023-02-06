@@ -6,9 +6,9 @@ With this project we specifically aim to support novices in the field of microel
 <br>
 Things you can find here include:
 
-- full documentation, incl. source files for program code, PCB & housing elements
-- building instructions, incl. videos
-- calibration app & data for revC velocity sensor
+- full documentation, incl. source files for [program code](./code), [PCB](./pcb) & [housing elements](./housing)
+- [building instructions](instructions.md), incl. videos
+- [calibration app](https://t-kramer-revc-calibration-tool-main-mtgpng.streamlit.app) & [data](./revC-calibration) for revC velocity sensor
 <br>
 
 Also, make sure that you head to our discussions page.
