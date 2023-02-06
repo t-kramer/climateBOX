@@ -116,10 +116,10 @@ installing ESP32 board to Arduino IDE:<br>
 https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
 https://www.arduino.cc/en/software
 
-Installing Arduino libraries:<br>
+installing Arduino libraries:<br>
 https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries
 
-Upload program to microcontroller:<br>
+upload program to microcontroller:<br>
 https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE
 
 <br>
@@ -135,6 +135,9 @@ The instructions are separated into three sections. For the first two sections, 
 The links to the videos can be found here:<br>
 <br>
 [Video | Part I](https://vimeo.com/794707921)
+<br>
+<br>
+[Video | Part II](https://vimeo.com/796140156)
 <br>
 <br>
 Before you start, again make sure you have done the following:
@@ -171,7 +174,9 @@ The following instructions will roughly follow the order shown in the video. It 
 <br>
 Here's the link to the video again:
 <br>
+
 [Video | Part I](https://vimeo.com/794707921)
+
 <br>
   
 #### 1.1 Attaching the resistors to PCB
@@ -216,7 +221,10 @@ Depending on the version you want to build, you have to add one additional compo
 
 The link to the video can be found here:
 <br>
-LINK
+
+[Video | Part II](https://vimeo.com/796140156)
+
+<br>
 <br>
 
 #### 2.1 DS18B20
@@ -323,7 +331,9 @@ We can use either of these modules because they use the same PCB pins to communi
 <br>
 The process for both modules is roughly the same. However, we’d recommend the following: If building v0.0, directly solder the wired RTC to the bottom of the PCB. For v1.0 we use the proven combination of male header pins and female crimp connectors. We’ll quickly describe both alternatives below. But first, make sure to remove any previously installed header pins on the module you are going to use.<br>
 <br>
+
 **OLED display v1.0**
+
 The preparation here is very similar to the revC sensor. You have to go through the process of cutting wires (AWG-22, length: ~ 100 mm), tinning (one end of each wire) and crimping (other end of the wire).<br>
 <br>
 After that, you can go ahead and solder the tinned ends of the wires to the OLED display module.<br>
@@ -331,7 +341,9 @@ After that, you can go ahead and solder the tinned ends of the wires to the OLED
 Then push over some heat shrink if you like. Now, you can push the crimped connectors into the housing. Voila, you are done with the preparations and can assemble everything in **PART III**.<br>
 <br>
 <br>
+
 **RTC v0.0**
+
 The first steps for the RTC are similar to the ones above: cutting wires (AWG-22, length: ~ 100 mm) and tinning (both ends of each wire).<br>
 <br>
 Because we are going for a fixed solution here, where the RTC module is directly soldered to the PCB instead of using the detachable female connector, we save ourselves the crimping process. Just beware that a potential removal or exchange of this module later might be a bit of a tedious procedure.<br>
