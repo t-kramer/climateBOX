@@ -501,8 +501,72 @@ If neither of those things fixes your problem, feel free to navigate to the disc
 
 --------------------------------------------------
   ## Part V: The Program Code
-  - Explanation climateBOX code
-  - Highlight differences
-  - Make sure that: USB wire is attached properly, SD card is inserted
+  
+  We are planning to release another video here soon.<br>
+  The video will cover the following:<br>
+  - general code structure
+  - differences between v0.0 and v1.0
+  - how to set-up a cloud monitoring system consisting of several v1.0 climateBOX units
+  - FAQ, common errors and further information on things like resetting the RTC, customisations, etc.
+  <br>
+  <br>
+  For now, please refer to the inline comments in the sketches/program files. Also, feel free to contact us if there anything specific you want to know. :)
+  <br>
+  <br>
+  For v0.0: If you have manually installed all libraries mentioned above, you should be able to upload and run the code without any prior knowledge and further explanations. Before you upload the code, make sure that you change the zeroWind adjustment to the value you obtained from the calibration/calibration tool. Otherwise, if you have followed the steps described earlier and the reminders below, you should be ready to go.
+  
+  <br>
+  <br>
+
+  - make sure that: USB wire is attached properly, SD card is inserted
   - connect climateBOX to PC/Mac via USB
-  - Upload the climateBOX_rtc.ino file
+  - select the correct board in Arduino IDE
+  - verify and upload the climateBOX_v0.0.ino file
+  - check the serial monitor for output
+
+
+--------------------------------------------------
+  ## OPTIONAL - Part VI: Setting up a cloud-based monitoring system (advanced)
+  
+  The ESP32 comes with on-board WiFi. This allows to use several v1.0 units together in a WiFi-based monitoring system with live data upload to a cloud database and/or dashboard. This facilitates the process of retrieving the data and a provides a live visualisation of collected data. Please be aware, that the v1.0 work individually without a problem and do only require WiFi access to update the time. The data is always stored on the local SD card. But who doesn't want a nice and schmick dashboard?
+  <br>
+  <br>
+  What you need:
+  <br>
+  1x Raspberry Pi (e.g. 3 or 4)
+  <br>
+  1x 4G/LTE USB Dongle incl. SIM card from your local mobile provider
+  <br>
+  2+ climateBOX v1.0 units
+  <br>
+  
+  <br>
+  <br>
+  
+  In a minimal solution, the only things you need are a climateBOX v1.0 unit and a WiFi network. Services like Adafruit I/O make it very easy to upload microcontroller data to a live dashboard and do not really require any background knowledge. If you think that this is your preferred option, feel free to do some research on the web. There are many sources that describe how to set up such a system. Hint: The Adafruit I/O webpage would be a good start :)
+  However, based on our experience we suggest an alternative solution which, to be honest, requires a little more setup, but is absolutely worth the effort.
+  
+  <br>
+  <br>
+  
+  In todays world where most WiFi networks are well protected, it can be quite hard to connect your microcontrollers, especially if you want to use it for a longer period and don't want to change network SSIDs and PW everytime you setup your device in a new space. This is why we suggest to make your system completely indepedent and to bring your own network. Yes, correct. You can easily bring your own network with you.
+  
+  <br>
+  <br>
+  
+  We made good experiences with using a Raspberry Pi and a common 4G USB dongle to setup our own network. Connected to the 4G/LTE mobile network via a SIM card from a local provider, the RPi acts as a hotspot all your units can be connected to. The best thing is that the IP address, network SSID and PW remain the same, wherever you want to go. This means that setting up your system in a new place is as easy as connecting everything to a power source, done!
+  
+  <br>
+  <br>
+  
+  While setting up the communication between the climateBOX units, RPi and the web might take some time, this remains an initial one-time effort and usually doesn't require any maintenance or updates. The most difficult part is probably to setup the RPi. Luckily, someone made an effort to explain everything step by step:
+  
+  <br>
+ 
+  LINK
+  
+  <br>
+  <br>
+  
+  If you want a little more background information, it might be worth reading about [MQTT](https://mqtt.org), the communication protocoll that is used here. In our system the RPi is the MQTT broker, and the individual climateBOX units are clients. The climateBOX v1.0 code is written for use in such a system. The only things you need to adjust are the settings related to the MQTT. More on that in the additional video which will be released soon.
+
