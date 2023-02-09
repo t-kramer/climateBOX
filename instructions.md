@@ -422,14 +422,33 @@ https://www.arduino.cc/en/software<br>
  #### 4.2.3 Required libraries
 To use the sensors, you also need to install some custom libraries first. Again, here is a [link](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries) that will show you how to do that.<br>
 <br>
-If you are familiar with the process of installing additional libraries, please go ahead and install the following libs required to run the climateBOX<br>
+If you are familiar with the process of installing additional libraries, please go ahead and install the following libs required to run the climateBOX:
 <br>
-a)
 <br>
-b)
+
+
+|   Library                 | Developer         |used in:|
+|---------------------------|-------------------|--------|
+|   DHT sensor library      | Adafruit          | both   |
+|   Adafruit Unified Sensor | Adafruit          | both   |
+|   Adafruit BusIO          | Adafruit          | both   |
+|   OneWire                 | Paul Stoffregen   | both   |
+|   DallasTemperature       | Miles Burton      | both   |
+|   RTClib                  | Adafruit          | v0.0   |
+|   Adafruit SSD1306        | Adafruit          | v1.0   |
+|   Adafruit GFX Library    | Adafruit          | v1.0   |
+|   ESP32Time               | fbiego            | v1.0   |
+|   EspMQTTClient           | Patrick Lapointe  | v1.0   |
+|   PubSubClient            | Nick O’Leary      | v1.0   |
+
 <br>
-c)
 <br>
+
+You can simply search for the name in the Arduino IDE library manager and if you are still unsure, also knowing the developer should make it easier.
+
+<br>
+<br>
+
 
   #### 4.2.4 Test Connection
 Now, that all libraries are installed, the last thing we need to do upload the climateBOX program. Again, here the program you have to use depends on the climateBOX version you want to build. The programs can be found in the [code](./code) folder in this repository.<br>
@@ -510,7 +529,7 @@ If neither of those things fixes your problem, feel free to navigate to the disc
   - FAQ, common errors and further information on things like resetting the RTC, customisations, etc.
   <br>
   <br>
-  For now, please refer to the inline comments in the sketches/program files. Also, feel free to contact us if there anything specific you want to know. :)
+  For now, please refer to the inline comments in the sketches/program files. Also, feel free to contact us if there is anything specific you want to know. :)
   <br>
   <br>
   For v0.0: If you have manually installed all libraries mentioned above, you should be able to upload and run the code without any prior knowledge and further explanations. Before you upload the code, make sure that you change the zeroWind adjustment to the value you obtained from the calibration/calibration tool. Otherwise, if you have followed the steps described earlier and the reminders below, you should be ready to go.
