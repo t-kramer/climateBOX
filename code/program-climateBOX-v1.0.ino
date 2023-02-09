@@ -86,17 +86,17 @@ const double C_B_globe = -0.2829;
 
 // WiFi & MQTT
   
-const char* ssid = "PiLan";                                 // network SSID*
-const char* wifi_password = "raspberry007";                 // network password*
+const char* ssid = "[YOUR NETWORK SSID]";                        // network SSID*
+const char* wifi_password = "[YOUR PASSWORD]";                   // network password*
 
-const char* mqtt_server = "192.168.66.1";                   // IP of the MQTT broker*
-const char* humidity_topic = "system/box2/humi";            // MQTT topics*
-const char* temperature_topic = "system/box2/temp";         //
-const char* globe_topic = "system/box2/glob";               //
-const char* velocity_topic = "system/box2/velo";            //
-const char* mqtt_username = "tobi";                         // MQTT username*
-const char* mqtt_password = "tobi";                         // MQTT password*
-const char* clientID = "client_box2";                       // MQTT client ID*
+const char* mqtt_server = "[YOUR MQTT SERVER IP]";               // IP of the MQTT broker*
+const char* humidity_topic = "system/box2/rh";                   // Exemplary MQTT topics*
+const char* temperature_topic = "system/box2/ta";                //
+const char* globe_topic = "system/box2/tg";                      //
+const char* velocity_topic = "system/box2/vel";                  //
+const char* mqtt_username = "[YOUR USERNAME]";                   // MQTT username*
+const char* mqtt_password = "[YOUR PW]";                         // MQTT password*
+const char* clientID = "[YOUR CLIENT ID]";                       // MQTT client ID*
 
 const char* ntpServer = "pool.ntp.org";
 const long gmtOffset_sec = 32400;                           // Brisbane, Australia*
