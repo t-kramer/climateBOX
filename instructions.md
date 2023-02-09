@@ -320,6 +320,7 @@ Now, for each through hole there should appear some remaining wire on the top si
 <br>
 <br>
 <br>
+
   #### 2.4 RTC/Display module
 Now it is time for the last component. Like we explained earlier, the component you use depends on the climateBOX version you want to build:<br>
 <br>
@@ -351,7 +352,9 @@ Because we are going for a fixed solution here, where the RTC module is directly
 After tinning both wire ends, you can go ahead and solder one end of each wire to the RTC module, done! The rest will be covered in PART III.<br>
 <br>
 <br>
+
 ## PART III: Preparing the housing
+
 <br>
 All housing parts can be 3D printed by using the .stl files in the [housing](./housing) folder.<br>
 <br>
@@ -367,15 +370,17 @@ In both, bottom and top element, there are notches. Later on, these notches acco
 After you’ve done that, you can go ahead with the actual assembly.<br>
 <br>
 <br>
---------------------------------------------------
-<br>
+
+
 ## PART IV: Assembly
 Now that you've prepared all parts and finished most of the work, it's time to put everything together. <br>
 <br>
 But before you proceed with the final assembly and put everything into the housing, it makes sense to test the climateBOX core and its connections (soldered/crimped) before. So, I recommend dividing the assembly into two steps:
 <br>
+
 -	core assembly
 -	final assembly
+
 <br>
   
   [PICTURE]
