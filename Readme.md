@@ -11,7 +11,7 @@ Things you can find here include:
 - [calibration app](https://t-kramer-revc-calibration-tool-main-mtgpng.streamlit.app) & [data](./revC-calibration) for revC velocity sensor
 <br>
 
-Also, make sure that you head to our discussions page.
+Also, make sure that you head to the discussions page.
 
 https://github.com/t-kramer/climateBOX/discussions
 
@@ -27,7 +27,7 @@ Have fun!
 <br>
 <br>
 
-For more information, feel free to read our recent scientific publication covering the unit's development and calibration.
+For more information, feel free to read our recent scientific publication covering our thoughts around the unit's development and calibration.
 
 *Kramer, T., Garcia-Hansen, V., & Omrani, S. (2023). climateBOX: a low-cost and open-source monitoring device for personal thermal comfort evaluation. Energy and Buildings, 112830.* https://doi.org/https://doi.org/10.1016/j.enbuild.2023.112830 
 
