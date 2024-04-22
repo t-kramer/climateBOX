@@ -17,9 +17,6 @@ https://github.com/t-kramer/climateBOX/discussions
 
 This is where we post about any updates, ask for your feedback and host our Q&A page.<br>
 <br>
-
-**NOTE: We are still building content and will update the page on a daily basis. So, stay tuned!💡** 
-
 <br>
 
 Have fun!
@@ -27,7 +24,7 @@ Have fun!
 <br>
 <br>
 
-For more information, feel free to read our recent scientific publication covering our thoughts around the unit's development and calibration.
+For more information, feel free to read a scientific publication covering our thoughts around the unit's development and calibration.
 
 *Kramer, T., Garcia-Hansen, V., & Omrani, S. (2023). climateBOX: a low-cost and open-source monitoring device for personal thermal comfort evaluation. Energy and Buildings, 112830.* https://doi.org/https://doi.org/10.1016/j.enbuild.2023.112830 
 
